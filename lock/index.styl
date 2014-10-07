@@ -1,0 +1,83 @@
+@require '../common'
+
+*
+	font-family: Roboto
+	vender user-select none
+
+body
+	margin: 0
+	// overflow: hidden
+	background: hsla(227, 75%, 62%, 100%)
+
+box-resize(size, base-width, base-height)
+	padding: ((size - base-height)/2) ((size - base-width)/2) ((size - base-height)/2) ((size - base-width)/2)
+
+#datetime
+	position: absolute
+	top: .75em
+	// left: 1.5em
+	right: 1.5em
+
+	// top: 1em
+	// left: 50%
+	// width: 5em
+	// text-align: center
+	// margin-left: -(@width / 2)
+
+#time
+	font-weight: 200
+	font-size: 70pt
+
+	// black text
+	color: black
+	text-shadow: hsla(227, 75%, 82%, 70%) 0px 0px 5px, hsla(227, 100%, 84%, 80%) 0px 0px 80px
+
+	// white text
+	// color: hsla(0, 0%, 100%, 72%)
+	// text-shadow: hsla(227, 65%, 10%, 90%) 0px 0px 4px, hsla(227, 61%, 100%, 80%) 0px 0px 80px
+
+#date
+	font-weight: 300
+	font-size: 12pt
+	margin-top: -.9em
+	// margin-left: 1em
+	text-align: right
+	padding-right: .64em
+	color: hsla(0, 0%, 100%, 72%)
+	text-shadow: hsla(227, 65%, 25%, 90%) 0px 0px 4px, hsla(227, 65%, 100%, 100%) 0px 0px 55px
+
+.patternlock
+	point-size = 50px
+	point-margin = 12px
+
+	position: absolute
+	left: 50%
+	width: (point-size+(point-margin*2)+4)*3+14
+	margin-left: -(@width/2)
+	bottom: 2em
+	overflow: hidden
+
+	td
+		padding: point-margin
+		.point
+			display: inline-block
+			width: point-size
+			height: point-size
+			// margin: point-margin
+			background: radial-gradient(
+				hsla(232, 75%, 75%, 100%) 0%,
+				hsla(232, 75%, 70%, 100%) 15%,
+				hsla(232, 75%, 62%, 100%) 20%,
+				hsla(0, 0%, 0%, 0%) 50%
+			)
+			border: 1px solid hsla(227, 75%, 75%, 100%)
+			border-radius: point-size
+
+			&.selected
+				background: radial-gradient(
+					hsla(235, 80%, 90%, 100%) 0%,
+					hsla(235, 80%, 90%, 100%) 10%,
+					hsla(235, 80%, 76%, 100%) 15%,
+					hsla(230, 80%, 62%, 100%) 20%,
+					hsla(0, 0%, 0%, 0%) 50%
+				)

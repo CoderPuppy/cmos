@@ -1,0 +1,33 @@
+{
+	"private": true,
+
+	"name": "cmos",
+	"description": "CoderPuppy Mobile Operating System",
+	"author": "CoderPuppy",
+
+	"dependencies": {
+		"dateformat": "^1.0.8-1.2.3",
+		"domready": "^1.0.6",
+		"bean": "^1.0.14",
+		"qwery": "^4.0.0",
+		"hammerjs": "^2.0.2",
+		"js-sha512": "^0.1.1",
+		"domify": "^1.3.0"
+	},
+
+	"devDependencies": {
+		"chokidar": "^0.8.4",
+		"ws": "^0.4.32",
+		"browserify": "^4.1.11",
+		"watchify": "^1.0.2",
+		"es6ify": "^1.3.0",
+		"jadeify": "^2.5.0",
+		"stylus": "^0.47.3",
+		"jade": "^1.5.0",
+		"ecstatic": "^0.5.4"
+	},
+
+	"jadeify": {
+		"pretty": true
+	}
+}

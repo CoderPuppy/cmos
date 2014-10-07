@@ -1,0 +1,8 @@
+div.patternlock
+	table
+		tbody
+			- for(var row = 0; row < size; row++)
+				tr(data-row = row)
+					- for(var col = 0; col < size; col++)
+						td(data-row = row data-col = col)
+							span.point
